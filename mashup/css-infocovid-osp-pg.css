@@ -1,0 +1,48 @@
+
+/* RESET */
+dl, ol, ul {margin: 0;}
+*:focus {outline: none!important;}
+
+/* Sanita Robochat */
+.sanitaumbria {font-size:18px; width:100%; max-width:100%; padding:0; margin:0 auto; background:none; font-family: 'Titillium Web', sans-serif;}
+/* Template banner infocovid FULL */
+.su-banner-full { padding:0; width:100%; background:#000; margin:0 auto; text-align:center;}
+.su-banner-full, .su-banner-full a {color:#fff; text-decoration:none;}
+.su-banner-full-textarea {padding:15px; margin:0 auto; text-align:center;}
+.su-banner-full-img img  {width:auto; max-width:100%;}
+.su-banner-full-content {line-height:140%;}
+.su-banner-full-content .tit {font-size:22px; font-weight:bold;}
+.su-banner-full-content .desc {font-size:18px; font-weight:bold;}
+.su-banner-full-content .txt {font-size:16px;}
+.su-btn {margin-top:6px;}
+.su-btn a {padding:10px; height:auto; font-size:15px; display:inline-block; background:#bc3636; text-transform:uppercase;  line-height:100%;}
+@media (min-width: 768px) {	
+.su-banner-full-textarea {padding:10px 15px 0 15px; display:flex; flex-direction:row; justify-content: center;}
+.su-banner-full-img, .su-banner-full-content, .su-btn  { margin:0 15px;}
+.su-banner-full-content {padding:10px 0;}
+.su-banner-full-img img  {max-height:100px;}
+.su-btn a {padding:10px; font-size:15px; margin-top:25px;}
+}
+@media (max-width: 767px) {	.su-banner-full-img img  {max-height:80px;}}
+/* FINE Template banner infocovid FULL */
+
+/* #robochat */
+#robochat {padding:0; margin:0;}
+#robochat .btn-chat {width: auto; font-size:16px; background:#1085be; padding:3px 5px; color:#fff;  position: fixed; height: auto; bottom: 0; right: 0;top: auto;left:auto; text-align:center; margin:0; z-index:99999;}
+#robochat .btn-chat a {color:#fff; text-decoration:none;}
+#robochat .tit-chat, #robochat .close  {float:left; display:block; margin-bottom:3px;}
+#robochat .close  {float:right;}
+#robochat .img-chat {display:block; width:100%;}
+#robochat .img-chat img {width:auto; max-width:100%;}
+@media (max-width: 767px) {	#robochat .img-chat img {display:none;}}
+
+@media (min-width: 768px) {
+    .no-desktop { display: none; }
+}
+
+
+/* BANNER-HOME */
+.article-banner .img img {width:auto!important; max-width:100%!important;}
+@media (max-width: 480px){
+    .article-banner .img {display:block!important;}
+}
