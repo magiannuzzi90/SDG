@@ -14,61 +14,67 @@
 	<link rel="stylesheet" href="CruscottoDirezionale.css">
 	<script src="../../resources/assets/external/requirejs/require.js"></script>
 	<script src="CruscottoDirezionale.js"></script>
+	<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
 <style>
-    .div-1 {
-        background-color: #EBEBEB;
-		
-    }
-    
-    .div-2 {
-    	background-color: #ABBAEA;
-    }
-    
-    .div-3 {
-    	background-color: #FBD603;
-    }
+    .div-1 {background-color: #EBEBEB;}
+	.div-2 {background-color: #ABBAEA;}
+	.div-3 {background-color: #FBD603;}
 </style>
+
 <body>
 <div class="header">
-  <h1 class="header__content-text">
-Cruscotto Direzionale
-</h1>
-<div id="CurrentSelections" class="qvobjects" style="position:relative; top:0; left:0; width:100%; height:38px;"> </div>
-
+	<h1 class="header__content-text" style="color:white">Cruscotto Direzionale</h1>
+		<div id="CurrentSelections" class="qvobjects" style="position:relative; top:0; left:0; width:100%; height:38px;"> </div>
 </div>
+
+
 <div class="page__content-container">
 
+	<!-- immagine iniziale -->
+	<div id="immagine" style="height:250px; background-image:url('https://moz.com/images/cms/top500-background-pattern.png?q=95&auto=format&fit=crop&dm=1633451445&s=b6ca48b616fad8da3e23784e549bc3d2'); background-repeat:no-repeat;background-size: 100% 100%">
+		<div id="img_content" align="center">
+			<p style="font-size:35px;color:lightblue;padding-top:50px">Benvenuto/a!</p>
+			<p style="font-size:15px;color:white">In queta pagina potrai monitorare alcuni dei principali indicatori sviluppati su QlikSense</p>
+		</div>
+	</div>
 
-<div class="row" align="center">
-	<div id="QV03" class="qvobject" style="border:none;width:30%"></div>
-	<div id="QV04" class="qvobject" style="border:none;width:30%"></div>
-	<div id="QV05" class="qvobject" style="border:none;width:30%"></div>
-</div>
+	<!-- selezione anno -->
+	<div id="yearSelector" align="center">
+		<p><b>Seleziona un anno:</b></p>
+		<div id="YearList" style="height: 30px; margin-top: 20px;"></div>
+	</div>
 
-<div class="row" align="center">
+
+	<br><br>
+
+	<div class="row" align="center">
+
+		<div style="width:30%; border-style: solid; border-radius: 15px;  overflow: hidden">
+			<div class="div-1" style="height:38px;">♣ App1 ♣</div>  
+			<div class="container" style="background: white;">
+				<h4><b>Monitoraggio Vendite</b></h4>
+				<p id="app1_misura"></p>
+				<button class="btn btn-success" onclick=" window.open('http://localhost:4848/extensions/CruscottoDirezionale/App1.html','_blank')"> Google</button>
+			</div>
+	</div>
+
+
+<div style="width:5%;"></div>
 
 <div style="width:30%; border-style: solid; border-radius: 15px;  overflow: hidden">
 
 
-<div class="div-1" style="height:38px;">
-♣ CIO Dashboard ♣
-</div>  
-<div class="container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p>
-	 <button class="btn btn-success" onclick=" window.open('http://google.com','_blank')"> Google</button>
-
-  </div>
-</div>
-<div style="width:5%;"></div>
-
-<div style="width:30%;">
 <div class="div-3" style="height:38px;">
-♣ CIO Dashboard ♣
-</div>  <div class="container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p>
+♣ App2 ♣
+</div>  
+<div class="container" style="background: white;">
+    <h4><b>Monitoraggio Perdite</b></h4>
+	<p id="app2_misura">
+	
+	</p>
 	 <button class="btn btn-success" onclick=" window.open('http://google.com','_blank')"> Google</button>
 
   </div>
@@ -89,7 +95,7 @@ Cruscotto Direzionale
 
 </div>
 
-
+<!--
 
   <div style="height:600px;">
     <a href="http://imgur.com/k9hz3">
@@ -103,7 +109,7 @@ Cruscotto Direzionale
   </div>
 </div>
 
-<!--
+
 <div>
 <div id="header" class="header" style="position:relative; top:0; left:0; width:100%; height:200px;">
 </div>
